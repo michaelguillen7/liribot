@@ -45,7 +45,7 @@ function spotifyThisSong() {
     if (!input) {
         spotify.search({
             type: 'track',
-            query: "The Sign"
+            query: 'Eye of the Tiger'
         }, function (err, data) {
             if (err) {
                 return console.log('Error occurred: ' + err);
@@ -162,6 +162,6 @@ switch (command) {
         doWhatItSays();
         break;
     default:
-        console.log("Try again! That is not a command");
+        console.log("Something went wrong, try again!");
         break;
 };
